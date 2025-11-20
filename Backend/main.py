@@ -81,7 +81,6 @@ For each rule, reply in JSON with keys: rule, status (pass/fail), evidence, reas
                 except json.JSONDecodeError as je:
                     print(f"[DEBUG] JSON parse error: {je}")
                     print(f"[DEBUG] JSON string (first 500 chars): {json_str[:500]}")
-                    # Try to clean up extra data by finding the closing bracket properly
                     bracket_count = 0
                     for i, char in enumerate(json_str):
                         if char == '[':

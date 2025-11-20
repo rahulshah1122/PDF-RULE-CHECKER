@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  max-width: 1200px;
 }
 
 .App-logo {
@@ -35,4 +36,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Status colors for results */
+.status-pass {
+  color: #2ecc71;
+  font-weight: 700;
+}
+
+.status-fail {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+/* Backend error banner */
+.error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fdecea;
+  color: #611a15;
+  border: 1px solid #f5c6cb;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.error-message {
+  flex: 1;
+  font-weight: 600;
+}
+
+.error-dismiss {
+  background: transparent;
+  border: 1px solid #611a15;
+  color: #611a15;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-dismiss:hover {
+  background: #611a15;
+  color: #fff;
 }
