@@ -127,8 +127,3 @@ A small project to upload a PDF and check it against user-defined rules.
    - If the frontend cannot reach the backend, confirm the backend is running on `http://localhost:8000` and check CORS settings in `Backend/main.py`.
    - This README only documents tools and env vars actually used in the current codebase.
 If your backend reads environment variables with a different naming convention, adjust the keys above to match the code in `Backend/main.py`.
-
-
-
-## Security & Deployment
-
